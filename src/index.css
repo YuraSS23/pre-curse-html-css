@@ -1,0 +1,23 @@
+* {
+font-family: "Rubik", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-image: url("./assets/images/Check.svg");
+}
+button {
+    width: 152px;
+    height: 51px;
+    border-radius: 4px;
+    background: #0A61F7;
+    font-size: 14px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+}
