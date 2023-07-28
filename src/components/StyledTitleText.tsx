@@ -5,5 +5,5 @@ export const StyledTitleText = styled.p`
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 `

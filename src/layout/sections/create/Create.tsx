@@ -1,21 +1,23 @@
 import React from 'react';
 import styled from "styled-components";
 import {StyledTitleText} from "../../../components/StyledTitleText";
+import source from "../../../assets/images/Check.svg";
 
 export const Create = () => {
     return (
         <StyledCreate>
             <CreateTitle>Create your free account</CreateTitle>
-            <StyledTitleText>Let us first talk about dreams. We all know that dreams do play a role in our daily lives. The majority
+            <StyledTitleTextCreate>Let us first talk about dreams. We all know that dreams do play a role in our daily
+                lives. The majority
                 of people pay little attention to dreams. Dreams can help us find solutions to our daily problems and
                 see things from a different perspective. Whenever we are dreaming, we can be who or what we want to be,
-                regardless of the fact that in real life.</StyledTitleText>
+                regardless of the fact that in real life.</StyledTitleTextCreate>
             <List>
                 <ListItem>Easy setup, fast start</ListItem>
                 <ListItem>Free forever for core features</ListItem>
                 <ListItem>14-day trial of premium features</ListItem>
             </List>
-            <form>
+            <CreateForm>
                 <input type={"text"} placeholder="Full Name*"/>
                 <input type={"email"} placeholder="Email"/>
                 <input type={"password"} placeholder="Password"/>
@@ -26,8 +28,7 @@ export const Create = () => {
                     <option>China</option>
                     <option>USA</option>
                 </select>
-                <fieldset>
-                    <legend>Favorite Technologies</legend>
+                <div>
                     <label htmlFor="front">
                         <input id="front" type="radio" name="stack" checked/>
                         Frontend
@@ -36,6 +37,10 @@ export const Create = () => {
                         <input id="back" type="radio" name="stack"/>
                         Backend
                     </label>
+                </div>
+                <fieldset>
+                    <legend>Favorite Technologies</legend>
+
                     <label htmlFor="html">
                         <input id="html" type="checkbox" name="html" checked/>
                         HTML
@@ -55,7 +60,7 @@ export const Create = () => {
                 </fieldset>
                 <textarea placeholder="Something else about you..."></textarea>
                 <input type="submit"/>
-            </form>
+            </CreateForm>
         </StyledCreate>
     );
 };
@@ -63,7 +68,7 @@ export const Create = () => {
 const StyledCreate = styled.section`
   min-height: 100vh;
   background-color: white;
-padding: 100px 0;
+  padding: 100px 0;
 `
 const CreateTitle = styled.h2`
   color: #363940;
@@ -72,10 +77,78 @@ const CreateTitle = styled.h2`
   font-height: 43px;
   margin-bottom: 50px;
 `
+const StyledTitleTextCreate = styled.p`
+  color: #95A1BB;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 40px;
+  max-width: 500px;
+`
+
 const ListItem = styled.li`
   margin-left: 30px;
   margin-bottom: 15px;
   color: #363940;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(${source});
+  }
 `
 const List = styled.ul`
+`
+const CreateForm = styled.form`
+  border-radius: 4px;
+  border: 1px solid #95A1BB;
+  padding: 14px 15px;
+  width: 100%;
+  max-width: 500px;
+
+  input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+    color: #95A1BB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    font-family: inherit;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  input[type="email"], input[type="password"], input[type="date"], select {
+    width: 230px;
+    height: 50px;
+  }
+
+  fieldset {
+    width: 100%;
+    padding: 30px 15px;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+  }
+
+  button {
+    width: 100%;
+  }
+  select {
+    background: url(../../../assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+    appearance: none;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+      width: 5px;
+      height: 5px;
+      display: inline-block;
+      background: url(../../../assets/images/Calendar.svg) no-repeat;
+  }
+
 `
