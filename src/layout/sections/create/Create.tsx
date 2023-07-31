@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from "styled-components";
 import {StyledTitleText} from "../../../components/StyledTitleText";
-import source from "../../../assets/images/Check.svg";
+import checkImg from "../../../assets/images/Check.svg";
+import arrowImg from "../../../assets/images/Arrow-down.svg";
+import calendarImg from "../../../assets/images/Calendar.svg";
 
 export const Create = () => {
     return (
@@ -40,7 +42,6 @@ export const Create = () => {
                 </div>
                 <fieldset>
                     <legend>Favorite Technologies</legend>
-
                     <label htmlFor="html">
                         <input id="html" type="checkbox" name="html" checked/>
                         HTML
@@ -96,7 +97,7 @@ const ListItem = styled.li`
     width: 20px;
     height: 20px;
     display: inline-block;
-    background: url(${source});
+    background: url(${checkImg});
   }
 `
 const List = styled.ul`
@@ -140,7 +141,7 @@ const CreateForm = styled.form`
     width: 100%;
   }
   select {
-    background: url(../../../assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+    background: url(${arrowImg}) no-repeat right 15px top 50%;
     appearance: none;
   }
 
@@ -148,7 +149,7 @@ const CreateForm = styled.form`
       width: 5px;
       height: 5px;
       display: inline-block;
-      background: url(../../../assets/images/Calendar.svg) no-repeat;
+      background: url(${calendarImg}) no-repeat;
   }
 
 `

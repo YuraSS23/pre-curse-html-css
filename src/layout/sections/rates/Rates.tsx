@@ -2,10 +2,12 @@ import React from 'react';
 import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon";
 import {StyledTitleText} from "../../../components/StyledTitleText";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 
 export const Rates = () => {
     return (
         <StyledRates>
+            <FlexWrapper direction={"column"} justify={"space-between"}>
             <RatesTitle>Rates</RatesTitle>
             <StyledTitleText>Failure will never overtake me if my determination to succeed is strong enough.</StyledTitleText>
             <RatesStyledTable>
@@ -54,6 +56,7 @@ export const Rates = () => {
                     </td>
                 </TableFooter>
             </RatesStyledTable>
+                </FlexWrapper>
         </StyledRates>
     );
 };
@@ -61,7 +64,7 @@ export const Rates = () => {
 const StyledRates = styled.section`
   min-height: 80vh;
   background-color: #F9FAFC;
-  padding: 100px 0;
+  padding: 100px 300px;
 `
 const RatesTitle = styled.h2`
   color: #363940;

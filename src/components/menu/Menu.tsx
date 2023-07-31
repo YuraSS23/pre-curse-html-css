@@ -24,4 +24,10 @@ const StyledMenu = styled.nav`
 a{
   color: white;
 }
+  ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  padding: 14px 0; 
 `
