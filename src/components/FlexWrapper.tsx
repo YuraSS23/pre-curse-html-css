@@ -5,12 +5,19 @@ type FlexWrapperPropsType = {
     justify?: string;
     align?: string;
     wrap?: string;
+    height?: string;
+    gap?: string;
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
-display: flex;
+  display: flex;
   flex-direction: ${props => props.direction || "row"};
   justify-content: ${props => props.justify || "flex-start"};
   align-items: ${props => props.align || "stretch"};
-  flex-wrap: ${props => props.wrap || "nowrap"}; 
+  flex-wrap: ${props => props.wrap || "nowrap"};
+  height: ${props => props.height};
+  gap: ${props => props.gap || "0"};
+.markup-img{
+  align-self: flex-end;
+}
 `

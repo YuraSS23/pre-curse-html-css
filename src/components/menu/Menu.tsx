@@ -26,8 +26,7 @@ a{
 }
   ul {
     display: flex;
-    gap: 30px;
-    justify-content: center;
+    gap: 24px;
   }
   padding: 14px 0; 
 `

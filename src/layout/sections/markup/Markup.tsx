@@ -3,26 +3,28 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import image from "../../../assets/images/image.png"
 import {StyledTitleText} from "../../../components/StyledTitleText";
+import {Container} from "../../../components/Container";
 
 export const Markup = () => {
     return (
         <StyledMarkup>
-            <FlexWrapper align={"center"} justify={"space-around"}>
-                <StyledMarkup>
-                    <StyledMarkupTitle>Markup achievement</StyledMarkupTitle>
-                    <StyledTitleText>The harder you work for something, the greater you’ll feel when you achieve it.</StyledTitleText>
-                    <StyledMarkupButton>
-                        <a href="">Learn More</a>
-                    </StyledMarkupButton>
-                </StyledMarkup>
-                <img src={image} alt=""/>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper align={"center"} justify={"center"} height={"800px"}>
+                    <StyledMarkup>
+                        <StyledMarkupTitle>Markup achievement</StyledMarkupTitle>
+                        <StyledTitleText>The harder you work for something, the greater you’ll feel when you achieve it.</StyledTitleText>
+                        <StyledMarkupButton>
+                            <a href="">Learn More</a>
+                        </StyledMarkupButton>
+                    </StyledMarkup>
+                    <img className="markup-img" src={image} alt=""/>
+                </FlexWrapper>
+            </Container>
         </StyledMarkup>
     );
 };
 
 const StyledMarkup = styled.section`
-  min-height: 100vh;
   background-color: white;
 `
 const StyledMarkupTitle = styled.h1`

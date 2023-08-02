@@ -3,60 +3,63 @@ import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon";
 import {StyledTitleText} from "../../../components/StyledTitleText";
 import {FlexWrapper} from "../../../components/FlexWrapper";
+import {Container} from "../../../components/Container";
 
 export const Rates = () => {
     return (
         <StyledRates>
-            <FlexWrapper direction={"column"} justify={"space-between"}>
-            <RatesTitle>Rates</RatesTitle>
-            <StyledTitleText>Failure will never overtake me if my determination to succeed is strong enough.</StyledTitleText>
-            <RatesStyledTable>
-                <tr>
-                    <TableTitle>Features</TableTitle>
-                    <th>Standart</th>
-                    <th>Plus</th>
-                    <th>PRQ</th>
-                </tr>
-                <tr>
-                    <TableSubTitle>Theory</TableSubTitle>
-                    <td><Icon iconId={"check"}/></td>
-                    <td><Icon iconId={"check"}/></td>
-                    <td><Icon iconId={"check"}/></td>
-                </tr>
-                <tr>
-                    <TableSubTitle>Practice</TableSubTitle>
-                    <td><Icon iconId={"close"}/></td>
-                    <td><Icon iconId={"check"}/></td>
-                    <td><Icon iconId={"check"}/></td>
-                </tr>
-                <tr>
-                    <TableSubTitle>Code review</TableSubTitle>
-                    <td><Icon iconId={"close"}/></td>
-                    <td><Icon iconId={"close"}/></td>
-                    <td><Icon iconId={"check"}/></td>
-                </tr>
-                <TableFooter>
-                    <TableSubTitle>
-                        <a href="">Have questions?</a>
-                    </TableSubTitle>
-                    <td>
-                        <RatesButton>
-                            <a href="">GET NOW</a>
-                        </RatesButton>
-                    </td>
-                    <td>
-                        <RatesButton color={"#0A61F7"} textcolor={"#FFF"}>
-                            <a href="">GET NOW</a>
-                        </RatesButton>
-                    </td>
-                    <td>
-                        <RatesButton>
-                            <a href="">GET NOW</a>
-                        </RatesButton>
-                    </td>
-                </TableFooter>
-            </RatesStyledTable>
+            <Container>
+                <FlexWrapper direction={"column"} align={"center"}>
+                    <RatesTitle>Rates</RatesTitle>
+                    <StyledTitleText>Failure will never overtake me if my determination to succeed is strong enough.</StyledTitleText>
+                    <RatesStyledTable>
+                        <tr>
+                            <TableTitle>Features</TableTitle>
+                            <th>Standart</th>
+                            <th>Plus</th>
+                            <th>PRQ</th>
+                        </tr>
+                        <tr>
+                            <TableSubTitle>Theory</TableSubTitle>
+                            <td><Icon iconId={"check"}/></td>
+                            <td><Icon iconId={"check"}/></td>
+                            <td><Icon iconId={"check"}/></td>
+                        </tr>
+                        <tr>
+                            <TableSubTitle>Practice</TableSubTitle>
+                            <td><Icon iconId={"close"}/></td>
+                            <td><Icon iconId={"check"}/></td>
+                            <td><Icon iconId={"check"}/></td>
+                        </tr>
+                        <tr>
+                            <TableSubTitle>Code review</TableSubTitle>
+                            <td><Icon iconId={"close"}/></td>
+                            <td><Icon iconId={"close"}/></td>
+                            <td><Icon iconId={"check"}/></td>
+                        </tr>
+                        <TableFooter>
+                            <TableSubTitle>
+                                <a href="">Have questions?</a>
+                            </TableSubTitle>
+                            <td>
+                                <RatesButton>
+                                    <a href="">GET NOW</a>
+                                </RatesButton>
+                            </td>
+                            <td>
+                                <RatesButton color={"#0A61F7"} textcolor={"#FFF"}>
+                                    <a href="">GET NOW</a>
+                                </RatesButton>
+                            </td>
+                            <td>
+                                <RatesButton>
+                                    <a href="">GET NOW</a>
+                                </RatesButton>
+                            </td>
+                        </TableFooter>
+                    </RatesStyledTable>
                 </FlexWrapper>
+            </Container>
         </StyledRates>
     );
 };
@@ -64,7 +67,7 @@ export const Rates = () => {
 const StyledRates = styled.section`
   min-height: 80vh;
   background-color: #F9FAFC;
-  padding: 100px 300px;
+  padding: 100px;
 `
 const RatesTitle = styled.h2`
   color: #363940;
