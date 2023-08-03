@@ -20,6 +20,9 @@ export const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
   }
+  a:hover {
+    text-decoration: underline;
+  }
   
 ul {
   list-style: none;
@@ -33,6 +36,9 @@ ul {
     color: white;
     font-weight: 500;
     border: none;
+    &:hover {
+      transform: translateY(-5px);
+    }
   }
   
   section:nth-of-type(odd) {

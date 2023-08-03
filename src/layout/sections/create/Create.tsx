@@ -68,7 +68,7 @@ export const Create = () => {
                             </label>
                         </fieldset>
                         <textarea placeholder="Something else about you..."></textarea>
-                        <input type="submit"/>
+                        <input type="submit" value="registration"/>
                     </CreateForm>
                 </FlexWrapper>
             </Container>
@@ -77,7 +77,6 @@ export const Create = () => {
 };
 
 const StyledCreate = styled.section`
-  min-height: 100vh;
   background-color: white;
   padding: 100px 0;
 `
@@ -117,7 +116,6 @@ const CreateForm = styled.form`
   gap: 20px;
   
   border-radius: 4px;
-  border: 1px solid #95A1BB;
   width: 100%;
   max-width: 500px;
 
@@ -127,10 +125,12 @@ const CreateForm = styled.form`
     font-weight: 400;
     line-height: 22.4px;
     font-family: inherit;
+    cursor: pointer;
   }
 
   input[type="text"] {
     width: 100%;
+    height: 50px;
   }
 
   input[type="email"], input[type="password"], input[type="date"], select {
@@ -167,9 +167,29 @@ const CreateForm = styled.form`
       display: inline-block;
       background-size: cover;
       background: url(${calendarImg}) no-repeat;
+    cursor: pointer;
   }
   div {
       display: flex;
       gap: 30px
+  }
+  input[type="submit"] {
+    width: 100%;
+    height: 51px;
+    padding: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #0A61F7;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    background-color: #0A61F7;
+    color: #FFFFFF;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      transform: translateY(-5px);
+    }
   }
 `
