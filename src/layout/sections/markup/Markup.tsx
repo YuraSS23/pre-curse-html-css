@@ -9,7 +9,7 @@ export const Markup = () => {
     return (
         <StyledMarkup>
             <Container>
-                <FlexWrapper align={"center"} justify={"center"} height={"800px"}>
+                <FlexWrapper align={"center"} justify={"center"} minheight={"800px"} mediadirection={"column"}>
                     <StyledMarkup>
                         <StyledMarkupTitle>Markup achievement</StyledMarkupTitle>
                         <StyledTitleText>The harder you work for something, the greater you’ll feel when you achieve it.</StyledTitleText>
@@ -26,6 +26,11 @@ export const Markup = () => {
 
 const StyledMarkup = styled.section`
   background-color: white;
+  margin: 100px 0 80px;
+
+  @media screen and (max-width: 1400px) {
+    align-self: center;
+  }
 `
 const StyledMarkupTitle = styled.h1`
   color: #363940;

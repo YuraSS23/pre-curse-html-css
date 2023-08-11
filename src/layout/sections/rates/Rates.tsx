@@ -9,7 +9,7 @@ export const Rates = () => {
     return (
         <StyledRates>
             <Container>
-                <FlexWrapper direction={"column"} align={"center"}>
+                <FlexWrapper direction={"column"} align={"center"} mediadirection={"column"} overflowX={"auto"}>
                     <RatesTitle>Rates</RatesTitle>
                     <StyledTitleText>Failure will never overtake me if my determination to succeed is strong enough.</StyledTitleText>
                     <RatesStyledTable>

@@ -11,8 +11,8 @@ export const Create = () => {
     return (
         <StyledCreate>
             <Container>
-                <FlexWrapper justify={"space-between"}>
-                    <FlexWrapper direction={"column"}>
+                <FlexWrapper justify={"space-between"} wrap={"wrap"} gap={"70px"}>
+                    <FlexWrapper direction={"column"} mediadirection={"column"}>
                         <CreateTitle>Create your free account</CreateTitle>
                         <StyledTitleTextCreate>Let us first talk about dreams. We all know that dreams do play a role in our daily
                             lives. The majority

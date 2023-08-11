@@ -16,6 +16,9 @@ export const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  body {
+    min-width: 380px;
+  }
   
   a {
     text-decoration: none;
