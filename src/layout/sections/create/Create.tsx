@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from "styled-components";
 import {StyledTitleText} from "../../../components/StyledTitleText";
 import checkImg from "../../../assets/images/Check.svg";
@@ -8,6 +8,16 @@ import {Container} from "../../../components/Container";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 
 export const Create = () => {
+    const [technologies, setTechnologies] = useState([
+        {id: 1, checked: true},
+        {id: 2, checked: true},
+        {id: 3, checked: false},
+        {id: 4, checked: false}
+    ])
+    const setOnTechnologies = (taskId: number, checked: boolean)=>{
+        setTechnologies(technologies.map(el=>el.id === taskId ? {...el, checked} : el))
+    }
+
     return (
         <StyledCreate>
             <Container>
@@ -51,19 +61,19 @@ export const Create = () => {
                         <fieldset>
                             <legend>Favorite Technologies</legend>
                             <label>
-                                <input type="checkbox" name="html" checked/>
+                                <input type="checkbox" name="html" checked={technologies[0].checked} onChange={(e)=>{setOnTechnologies(1, e.currentTarget.checked)}}/>
                                 HTML
                             </label>
                             <label >
-                                <input type="checkbox" name="css" checked/>
+                                <input type="checkbox" name="css" checked={technologies[1].checked} onChange={(e)=>{setOnTechnologies(2, e.currentTarget.checked)}}/>
                                 CSS
                             </label>
                             <label >
-                                <input type="checkbox" name="react"/>
+                                <input type="checkbox" name="react" checked={technologies[2].checked} onChange={(e)=>{setOnTechnologies(3, e.currentTarget.checked)}}/>
                                 React
                             </label>
                             <label>
-                                <input type="checkbox" name="sc"/>
+                                <input type="checkbox" name="sc" checked={technologies[3].checked} onChange={(e)=>{setOnTechnologies(4, e.currentTarget.checked)}}/>
                                 Styled components
                             </label>
                         </fieldset>
