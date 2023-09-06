@@ -26,7 +26,7 @@ export const Markup = () => {
 
 const StyledMarkup = styled.section`
   background-color: white;
-  margin: 100px 0 80px;
+  margin: 0px 0 80px;
 
   @media screen and (max-width: 1400px) {
     align-self: center;

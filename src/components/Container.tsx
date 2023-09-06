@@ -7,5 +7,4 @@ export const Container=styled.div`
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid red;
 `

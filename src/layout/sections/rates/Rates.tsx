@@ -12,6 +12,7 @@ export const Rates = () => {
                 <FlexWrapper direction={"column"} align={"center"} mediadirection={"column"} overflowX={"auto"}>
                     <RatesTitle>Rates</RatesTitle>
                     <StyledTitleText>Failure will never overtake me if my determination to succeed is strong enough.</StyledTitleText>
+                    <TableWrapper>
                     <RatesStyledTable>
                         <tr>
                             <TableTitle>Features</TableTitle>
@@ -58,6 +59,7 @@ export const Rates = () => {
                             </td>
                         </TableFooter>
                     </RatesStyledTable>
+                    </TableWrapper>
                 </FlexWrapper>
             </Container>
         </StyledRates>
@@ -67,7 +69,7 @@ export const Rates = () => {
 const StyledRates = styled.section`
   min-height: 80vh;
   background-color: #F9FAFC;
-  padding: 100px;
+  padding: 100px 0 0 0;
 `
 const RatesTitle = styled.h2`
   color: #363940;
@@ -79,6 +81,7 @@ const RatesTitle = styled.h2`
 
 const RatesStyledTable = styled.table`
   background-color: #f9fafc;
+  width: 940px;
   th,td {
     border: 1px solid #95A1BB;
     width: 240px;
@@ -86,6 +89,14 @@ const RatesStyledTable = styled.table`
     text-align: center;
   }
 `
+
+const TableWrapper = styled.div`
+overflow-x: auto;
+  width: 100%;
+  max-width: 940px;
+`
+
+
 const TableTitle = styled.th`
   color: #95A1BB;
   font-size: 18px;
@@ -123,8 +134,11 @@ type RatesButtonPropsType = {
    }
 `
 const TableFooter = styled.tr`
-td {
-  padding: 30px 0;
-}
+  th,td {
+    border: 1px solid #95A1BB;
+    width: 240px;
+    padding: 15px 0;
+    text-align: center;
+  }
 `
 
