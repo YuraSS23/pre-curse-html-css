@@ -22,9 +22,11 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   height: ${props => props.height};
   gap: ${props => props.gap || "0"};
   min-height: ${props => props.minheight || "none"};
-.markup-img{
-  align-self: flex-end;
-}
+
+  .markup-img {
+    align-self: flex-end;
+  }
+
   @media screen and (max-width: 1400px) {
     flex-direction: ${props => props.mediadirection || "row"};
     justify-content: ${props => props.mediadjustify || "center"};
@@ -32,6 +34,7 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     .markup-img {
       align-self: center;
     }
+
     @media screen and (max-width: 768px) {
       .markup-img {
         width: 347px;
@@ -39,5 +42,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
       }
     }
   }
-  
+
 `

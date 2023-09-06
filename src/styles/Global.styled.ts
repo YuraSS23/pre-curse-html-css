@@ -1,7 +1,7 @@
 import {createGlobalStyle} from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  
+
   *,
   *::before,
   *::after {
@@ -10,26 +10,29 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
   }
-  
-  html,body {
+
+  html, body {
     color: black;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
   body {
     min-width: 380px;
   }
-  
+
   a {
     text-decoration: none;
   }
+
   a:hover {
     text-decoration: underline;
   }
-  
-ul {
-  list-style: none;
-}
+
+  ul {
+    list-style: none;
+  }
+
   button {
     width: 152px;
     height: 51px;
@@ -39,11 +42,12 @@ ul {
     color: white;
     font-weight: 500;
     border: none;
+
     &:hover {
       transform: translateY(-5px);
     }
   }
-  
+
   section:nth-of-type(odd) {
     background-color: #FFFFFF;
   }
@@ -51,5 +55,5 @@ ul {
   section:nth-of-type(even) {
     background-color: #F9FAFC;
   }
-  
+
 `
