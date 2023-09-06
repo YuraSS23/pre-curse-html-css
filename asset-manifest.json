@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/pre-curse-html-css/static/css/main.31d6cfe0.css",
+    "main.js": "/pre-curse-html-css/static/js/main.00cdf972.js",
+    "static/js/787.81d94633.chunk.js": "/pre-curse-html-css/static/js/787.81d94633.chunk.js",
+    "static/media/image.png": "/pre-curse-html-css/static/media/image.8f98517e2cb73da1e320.png",
+    "static/media/icons-sprite.svg": "/pre-curse-html-css/static/media/icons-sprite.f70849b341a12261cd405acbb4b3c0ca.svg",
+    "static/media/Calendar.svg": "/pre-curse-html-css/static/media/Calendar.37acd3dab8b810d7a403c297a3024b60.svg",
+    "index.html": "/pre-curse-html-css/index.html",
+    "static/media/Check.svg": "/pre-curse-html-css/static/media/Check.5ca9d3911936e6855906b6f4afb9a9c2.svg",
+    "static/media/Arrow-down.svg": "/pre-curse-html-css/static/media/Arrow-down.e51102c9a51639dfd34aa500bb8632b9.svg",
+    "main.00cdf972.js.map": "/pre-curse-html-css/static/js/main.00cdf972.js.map",
+    "787.81d94633.chunk.js.map": "/pre-curse-html-css/static/js/787.81d94633.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.00cdf972.js"
+  ]
+}
